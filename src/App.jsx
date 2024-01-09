@@ -1,11 +1,14 @@
+import Controls from "./Components/Controls";
 import Header from "./Components/Header";
+import Main from "./Components/Main";
 
-function App() {
+export default function App() {
   return (
     <>
       <Header />
+      <Main>
+        <Controls /> {/*children*/}
+      </Main>
     </>
   );
 }
-
-export default App;
