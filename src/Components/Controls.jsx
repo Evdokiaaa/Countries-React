@@ -6,7 +6,12 @@ const ControlsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media screen and (max-width: 596px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
 const options = [
   { value: "Africa", label: "Africa" },
   { value: "America", label: "America" },
