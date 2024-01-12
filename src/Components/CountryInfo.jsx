@@ -87,11 +87,9 @@ const CountryInfo = (country) => {
   const [neighbors, setNeighbors] = React.useState([]);
   const nativeName = Object.values(name.nativeName)[0].official;
   const lastLanguage = Object.values(languages).pop();
-  console.log(country);
   React.useEffect(() => {
     axios.get(searchByCode(borders)).then(({ data }) => setNeighbors(data));
   }, [borders]);
-  console.log(neighbors);
 
   return (
     <CountryInfoSection>

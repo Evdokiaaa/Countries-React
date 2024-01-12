@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function NotFound() {
-  return <h1>This page doesn't exit</h1>;
+  return <h1>This page does not exit</h1>;
 }

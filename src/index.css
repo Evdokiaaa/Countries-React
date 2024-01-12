@@ -10,7 +10,6 @@
   --fw-normal: 600;
   --fw-bold: 800;
 }
-/*Сменить color--elements на норм название ( color-ui)*/
 body[data-theme="dark"] {
   --color-text: hsl(0, 0%, 100%);
   --color-bg: hsl(207, 26%, 17%);

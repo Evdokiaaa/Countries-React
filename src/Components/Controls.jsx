@@ -19,6 +19,7 @@ const options = [
   { value: "Europe", label: "Europe" },
   { value: "Oceania", label: "Oceania" },
 ];
+
 export default function Controls({ onSearch }) {
   const [search, setSearch] = React.useState("");
   const [region, setRegion] = React.useState(null);
@@ -26,6 +27,7 @@ export default function Controls({ onSearch }) {
     const regionValue = region?.value || "";
     onSearch(search, regionValue);
   }, [search, region]);
+
   return (
     <ControlsContainer>
       <Search search={search} setSearch={setSearch} />
